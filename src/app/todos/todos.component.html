@@ -1,0 +1,19 @@
+<div class="content">
+    <form class="input" [formGroup]="form" (ngSubmit)="formSubmition()">
+        <input type="text" formControlName="name">
+        <button type="submit">Add</button>
+        <div class="error">                
+            <div class="input-error" *ngIf="isErrorVisible('name', 'minlength')">Todo need to have at least 3 letters</div>
+            <div class="input-error" *ngIf="isErrorVisible('name', 'required')">Please enter some information</div>
+        </div>
+    </form>
+    <hr>
+    <div class="todo-list">
+        <div class="todo-item" *ngFor="let todo of todos.todoList">
+            {{todo.name}}
+            <div class="control">
+                <i (click)="remove(todo.id)">remove</i>
+            </div>
+        </div>
+    </div>
+</div>
