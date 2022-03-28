@@ -1,0 +1,70 @@
+.content{
+    margin: 2px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #FFFEFE;
+    border: 1px solid rgba(196, 195, 195, 0.445);
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 0.21);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 0.21);
+    box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 0.21);
+    margin-top: 5px;
+    min-height: 25px;
+    line-height: 25px;
+        
+
+    &:nth-child(2n){
+        background-color: #9ee4e4;
+    }
+    
+    .control{
+        margin-right: 10px;
+        color: black;
+        transition: .3s;
+        cursor: pointer;
+        float: right;
+        height: 25px;
+        float: right;
+
+        & > div:hover{
+            color: white;
+        }
+
+        &>div{
+            float: left;
+            margin-left: 5px;
+        }
+
+        .edit{
+            display: block;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 3px;
+            text-align: center;
+            background-color: #44f9ff;
+            transition: .4s;
+            font-weight: 600;
+
+            &:hover{
+                background-color: aqua;
+            }
+        }
+
+        .remove{
+            display: block;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 3px;
+            text-align: center;
+            background-color: #ff4444;
+            transition: .4s;
+            font-weight: 600;
+
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+}

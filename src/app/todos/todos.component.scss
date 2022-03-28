@@ -3,61 +3,7 @@
     min-height: 500px;
     padding: 20px;
     margin: 20px auto;
-    background-color: azure;
+    background-color: #FFFFFD;
     border-radius: 10px;
-    .input{
-        input{
-            width: 80%;
-            font-size: 16px;
-            line-height: 16px;
-            padding: 5px;
-            border-radius: 5px 0 0 5px;
-            border: 1px solid gray;
-        }
-        
-        button{
-            width: 15%;
-            height: 30px;
-            transform: translateY(-1px);
-            background-color: #b6ffff;
-            border-radius: 0 5px 5px 0;
-            border: 1px solid gray;
-            transition: .7s cubic-bezier(0.165, 0.84, 0.44, 1);
-            cursor: pointer;
-
-            &:hover{
-                background-color: #00ffff;
-            }
-        }
-
-        .error{
-            height: 16px;
-            color: red;
-            margin: 2px;
-        }
-    }
-
-
-    .todo-item{
-        margin: 2px;
-        padding: 5px;
-        border-radius: 2px;
-
-        
-
-        &:nth-child(2n){
-            background-color: #9ee4e4;
-        }
-        
-        .control{
-            margin-right: 25px;
-            color: #0051ff;
-            transition: .3s;
-            cursor: pointer;
-
-            &:hover{
-                color: #8400ff;
-            }
-        }
-    }
+    position: relative;
 }

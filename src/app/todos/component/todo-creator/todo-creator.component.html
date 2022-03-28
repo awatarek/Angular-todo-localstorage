@@ -1,0 +1,40 @@
+<form class="input" [formGroup]="form" (ngSubmit)="formSubmition()" class="single-column-form">
+    <div class="control" [class.input-error]="isInvalid('name')">
+        <label>Name<sup class="required">*</sup></label>
+        <input
+            formControlName="name"
+            type="text"
+            placeholder="Do the dishes"
+            pInputText
+            trim="blur">
+        <div class="input-error" *ngIf="isErrorVisible('name', 'minlength')">Todo name need to have at least 3 letters</div>
+        <div class="input-error" *ngIf="isErrorVisible('name', 'required')">Please enter todo name</div>
+    </div>
+
+    <div class="control">
+        <label>Tags</label>
+        <input
+            formControlName="tags"
+            type="text"
+            placeholder="school, work"
+            pInputText
+            trim="blur">
+    </div>
+
+    <div class="control" >
+        <label>Importancy</label>
+        <p-selectButton [options]="importanse" formControlName="importancy"></p-selectButton>
+    </div>
+
+    <div class="control">
+        <label>Deadline</label>
+        <p-calendar formControlName="deadline"></p-calendar>
+    </div>
+    
+    <div class="two-buttons-section">
+        <button class="primary-button" type="submit">{{ isEditing ? "Edit" : "Add"}}</button>
+        <button class="secondary-button" type="clear" [routerLink]="['/']">Cancel</button>
+    </div>
+
+</form>
+<p-toast></p-toast>
