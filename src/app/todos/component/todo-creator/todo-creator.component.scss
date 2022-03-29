@@ -1,10 +1,8 @@
 $invalid-color: red;
 $invalid-hover-color: darkred;
 $required-color: #FF5C5C;
-$success-color: green;
 $warning: #ffa200;
 $error-sub-color: #d40000;
-$section-header-background-color: #c1c1c1;
 
 .single-column-form {
     max-width: 500px;
@@ -42,9 +40,7 @@ $section-header-background-color: #c1c1c1;
         position: absolute;
         bottom: 10px;
         transform: translateX(40%);
-        .sloik-primary-button{
-            margin-top: 0;
-        }
+
         button:first-child{
             margin-left: 0;
         }
@@ -54,12 +50,6 @@ $section-header-background-color: #c1c1c1;
     }
 }
 
-
-.form-error {
-    color: $invalid-color;
-    text-align: center;
-    padding-bottom: 2rem;
-}
 
 .input-error, .input-warning {
     color: $invalid-color;
@@ -89,7 +79,7 @@ $section-header-background-color: #c1c1c1;
 }
 
 input::placeholder {
-    color: $section-header-background-color;
+    color: #c1c1c1;
 }
 
 
@@ -106,12 +96,20 @@ input::placeholder {
     -webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+    cursor: pointer;
 }
 
 .primary-button{
-    background-color: $success-color;
+    background-color: greenyellow;
+
+    &:hover{
+        background-color: green;
+    }
 }
 
 .secondary-button{
     background-color: $required-color;
+    &:hover{
+        background-color: $error-sub-color;
+    }
 }

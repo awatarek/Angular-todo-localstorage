@@ -1,5 +1,5 @@
-<button class="create-todo" [routerLink]="['/create']" >Add new todo</button>
-<hr>
+<button class="create-todo fa fa-plus" [routerLink]="['/create']"></button>
+
 <div class="todo-list">
     <todo-item *ngFor='let todo of todos.todoList' [todos]='todo' (todoEvent)="todoEvent($event)"></todo-item>
 </div>

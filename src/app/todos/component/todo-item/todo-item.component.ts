@@ -28,4 +28,12 @@ export class TodoItemComponent implements OnInit {
   public edit(id: number){
     this.route.navigate([`edit/${id}`])
   }
+
+  public importancyColor(importancy: string){
+    if(importancy){
+      return importancy;
+    } else {
+      return null;
+    }
+  }
 }

@@ -1,5 +1,7 @@
 <div class="content">
+    <i class="fa fa-flag importancy" [ngClass]="importancyColor(todos.importancy)"></i>
     {{todos.name}}
+    <div class="second-line">{{todos.deadline | date:'d/MM/yy'}}</div>
     <div class="control">
         <div class="fa fa-pencil edit" (click)="edit(todos.id)"></div>
         <div class="fa fa-trash remove" (click)="remove(todos.id)"></div>

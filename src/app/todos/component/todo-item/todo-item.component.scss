@@ -9,8 +9,9 @@
     -moz-box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 0.21);
     box-shadow: 0px 0px 5px 1px rgba(66, 68, 90, 0.21);
     margin-top: 5px;
-    min-height: 25px;
+    min-height: 62px;
     line-height: 25px;
+    position: relative;
         
 
     &:nth-child(2n){
@@ -24,7 +25,9 @@
         cursor: pointer;
         float: right;
         height: 25px;
-        float: right;
+        position: absolute;
+        right: 0;
+        top: 5px;
 
         & > div:hover{
             color: white;
@@ -42,12 +45,12 @@
             line-height: 25px;
             border-radius: 3px;
             text-align: center;
-            background-color: #44f9ff;
-            transition: .4s;
+            background-color: #00a2ff;
+            transition: .8s;
             font-weight: 600;
 
             &:hover{
-                background-color: aqua;
+                background-color: rgb(0, 47, 255);
             }
         }
 
@@ -58,13 +61,44 @@
             line-height: 25px;
             border-radius: 3px;
             text-align: center;
-            background-color: #ff4444;
-            transition: .4s;
+            background-color: #ff5f20;
+            transition: .8s;
             font-weight: 600;
 
             &:hover{
-                background-color: red;
+                background-color: #ff0000;
             }
         }
+    }
+
+    .importancy{
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        border: 1px solid gainsboro;
+        border-radius: 2px;
+        margin-right: 4px;
+
+        &.p1{
+            background-color: #e27272;
+        }
+
+        &.p2{
+            background-color: #fff241;
+        }
+
+        &.p3{
+            background-color: #4fec3a;
+        }
+
+        &.p4{
+            background-color: #32daf0;
+        }
+    }
+
+    .second-line{
+        margin-left: 25px;
     }
 }
